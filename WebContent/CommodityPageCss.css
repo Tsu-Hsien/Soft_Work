@@ -1,0 +1,290 @@
+.media-object{
+	width: 64px;
+	height: 64px;
+}
+
+body{
+	margin:0 auto;
+	word-wrap:break-word;
+}
+//
+// List groups
+// --------------------------------------------------
+
+
+// Base class
+//
+// Easily usable on <ul>, <ol>, or <div>.
+
+.list-group {
+  // No need to set list-style: none; since .list-group-item is block level
+  margin-bottom: 20px;
+  padding-left: 0; // reset padding because ul and ol
+}
+
+
+// Individual list items
+//
+// Use on `li`s or `div`s within the `.list-group` parent.
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  // Place the border on the list items and negative margin up for better styling
+  margin-bottom: -1px;
+  background-color: @list-group-bg;
+  border: 1px solid @list-group-border;
+
+  // Round the first and last items
+  &:first-child {
+    .border-top-radius(@list-group-border-radius);
+  }
+  &:last-child {
+    margin-bottom: 0;
+    .border-bottom-radius(@list-group-border-radius);
+  }
+}
+
+
+// Interactive list items
+//
+// Use anchor or button elements instead of `li`s or `div`s to create interactive items.
+// Includes an extra `.active` modifier class for showing selected items.
+
+a.list-group-item,
+button.list-group-item {
+  color: @list-group-link-color;
+
+  .list-group-item-heading {
+    color: @list-group-link-heading-color;
+  }
+
+  // Hover state
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: @list-group-link-hover-color;
+    background-color: @list-group-hover-bg;
+  }
+}
+
+button.list-group-item {
+  width: 100%;
+  text-align: left;
+}
+
+.list-group-item {
+  // Disabled state
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus {
+    background-color: @list-group-disabled-bg;
+    color: @list-group-disabled-color;
+    cursor: @cursor-disabled;
+
+    // Force color to inherit for custom content
+    .list-group-item-heading {
+      color: inherit;
+    }
+    .list-group-item-text {
+      color: @list-group-disabled-text-color;
+    }
+  }
+
+  // Active class on item itself, not parent
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    z-index: 2; // Place active items above their siblings for proper border styling
+    color: @list-group-active-color;
+    background-color: @list-group-active-bg;
+    border-color: @list-group-active-border;
+
+    // Force color to inherit for custom content
+    .list-group-item-heading,
+    .list-group-item-heading > small,
+    .list-group-item-heading > .small {
+      color: inherit;
+    }
+    .list-group-item-text {
+      color: @list-group-active-text-color;
+    }
+  }
+}
+
+
+// Contextual variants
+//
+// Add modifier classes to change text and background color on individual items.
+// Organizationally, this must come after the `:hover` states.
+
+.list-group-item-variant(success; @state-success-bg; @state-success-text);
+.list-group-item-variant(info; @state-info-bg; @state-info-text);
+.list-group-item-variant(warning; @state-warning-bg; @state-warning-text);
+.list-group-item-variant(danger; @state-danger-bg; @state-danger-text);
+
+
+// Custom content options
+//
+// Extra classes for creating well-formatted content within `.list-group-item`s.
+
+.list-group-item-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.list-group-item-text {
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.media {
+  // Proper spacing between instances of .media
+  margin-top: 15px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.media,
+.media-body {
+  zoom: 1;
+  overflow: hidden;
+}
+
+.media-body {
+  width: 10000px;
+}
+
+.media-object {
+  display: block;
+
+  // Fix collapse in webkit from max-width: 100% and display: table-cell.
+  &.img-thumbnail {
+    max-width: none;
+  }
+}
+
+.media-right,
+.media > .pull-right {
+  padding-left: 10px;
+}
+
+.media-left,
+.media > .pull-left {
+  padding-right: 10px;
+  
+}
+
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media-middle {
+  vertical-align: middle;
+}
+
+.media-bottom {
+  vertical-align: bottom;
+}
+
+// Reset margins on headings for tighter default spacing
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+// Media list variation
+//
+// Undo default ul/ol styles
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
+.comment{
+	resize: none;
+	width: 600px;
+}
+.media-left{
+	float:left;
+}
+.margin10{
+	margin: 10px;
+}
+
+
+header
+{
+
+}
+
+#info
+{
+	
+}
+
+a{
+	color: #074E8C;
+}
+
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+	height: 90%
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+
+/*
+ *  STYLE 1
+ */
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+
+/* http://www.jquery2dotnet.com/ */
+body{ margin-top:20px;}
+.glyphicon { margin-right:5px;}
+.rating .glyphicon {font-size: 22px;}
+.rating-num { margin-top:0px;font-size: 54px; }
+.progress { margin-bottom: 5px;}
+.progress-bar { text-align: left; }
+.rating-desc .col-md-3 {padding-right: 0px;}
+.sr-only { margin-left: 5px;overflow: visible;clip: auto; }
