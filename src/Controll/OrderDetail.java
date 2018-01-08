@@ -38,9 +38,9 @@ public class OrderDetail extends HttpServlet {
 		//從訂單編號去查購買的產品等資訊
 		ArrayList<OrderProduct> OrderProducts =new ArrayList<OrderProduct>(); //到時候改成用迴圈
 		OrderProduct OrderProduct;
-		OrderProduct= new OrderProduct("a01","e.jpg",1,"ring",300);
+		OrderProduct= new OrderProduct("a01","assets/img/e.jpg",1,"ring",300);
 		OrderProducts.add(OrderProduct);
-		OrderProduct= new OrderProduct("a02","f.jpg",2,"bracelet",600);
+		OrderProduct= new OrderProduct("a02","assets/img/f.jpg",2,"bracelet",600);
 		OrderProducts.add(OrderProduct);
 		String destination = "address";
 		String orderTime = "orderTime";
@@ -50,7 +50,8 @@ public class OrderDetail extends HttpServlet {
 		int shippingFee = 60;
 		String recipient = "snee";
 		String state = "get";
-		OrderDetailData OrderData = new OrderDetailData(orderID,destination,  orderTime, payment,  shippingMethod,  price,
+		String solderID = "solder";
+		OrderDetailData OrderData = new OrderDetailData(solderID,orderID,destination,  orderTime, payment,  shippingMethod,  price,
 				shippingFee,  recipient, OrderProducts, state);
 		request.setAttribute("OrderData", OrderData);
 		RequestDispatcher view = request.getRequestDispatcher("AccountDetail.jsp");

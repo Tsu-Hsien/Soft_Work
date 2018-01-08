@@ -46,7 +46,7 @@ hr.soften {margin: 8px 0;background: #DDD;}
 .homCar h4 {background-color: #eb4800; color: #fff;padding: 11px 4px;font-size: 26px;text-transform: uppercase;float: left;width: auto;-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';opacity: 0.8;}
 .homCar p span{background-color: #fff;color: #000;padding: 2px 10px;line-height: 30px;font-size: 28px;float: left;width: auto;opacity: 0.8;-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';}
 .carousel-control.left{left: -15600px;}
-.carousel-control.right{right: -15600px;}
+.carousel-control.right{left: -15600px;}
 .carousel:hover .carousel-control.right{right: 8px; left: auto;}
 .carousel:hover .carousel-control.left{left: 8px;}
 .alignR{text-align:right;}

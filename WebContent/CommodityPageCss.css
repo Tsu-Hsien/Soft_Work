@@ -288,3 +288,9 @@ body{ margin-top:20px;}
 .progress-bar { text-align: left; }
 .rating-desc .col-md-3 {padding-right: 0px;}
 .sr-only { margin-left: 5px;overflow: visible;clip: auto; }
+
+@media screen and (max-width: 992px) {
+    .notDisplay {
+        display:none ;
+    }
+}

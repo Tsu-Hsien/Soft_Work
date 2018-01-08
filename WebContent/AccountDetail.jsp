@@ -173,7 +173,7 @@ Body Section
 										<td rowspan="2" class="alignR">物流資訊：${OrderData.state}</td>
 									</tr>
 									<tr class="techSpecRow">
-										<td class="techSpecTD2">收貨地址：${OrderData.destination}<br>訂單編號：${OrderData.orderID}<br>賣家：張清風***
+										<td class="techSpecTD2">收貨地址：${OrderData.destination}<br>訂單編號：${OrderData.orderID}<br>賣家：${OrderData.solderID}
 										</td>
 									</tr>
 
@@ -193,9 +193,10 @@ Body Section
 									</tr>
 								</thead>
 								<tbody>
-									<c:forEach var="products" items="${OrderData.getOrderProducts()}">
+									<c:forEach var="products"
+										items="${OrderData.getOrderProducts()}">
 										<tr>
-											<td><img width="100" src="assets/img/${products.getImg()}" alt=""></td>
+											<td><img width="100" src="${products.getImg()}" alt=""></td>
 											<td>${products.getName()}<br>
 											</td>
 

@@ -11,9 +11,10 @@ public class OrderDetailData {
 	int price ;
 	int shippingFee ;
 	String recipient;
+	String solderID;
 	ArrayList<OrderProduct> OrderProducts;
 	
-	public OrderDetailData(String OrderID,String destination, String orderTime, String payment, String shippingMethod, int price,
+	public OrderDetailData(String solderID,String OrderID,String destination, String orderTime, String payment, String shippingMethod, int price,
 			int shippingFee, String recipient, ArrayList<OrderProduct> OrderProducts,String state) {
 		super();
 		this.OrderID = OrderID;
@@ -26,6 +27,13 @@ public class OrderDetailData {
 		this.recipient = recipient;
 		this.OrderProducts = OrderProducts;
 		this.state = state;
+		this.solderID = solderID;
+	}
+	public String getSolderID() {
+		return solderID;
+	}
+	public void setSolderID(String solderID) {
+		this.solderID = solderID;
 	}
 	public String getOrderID() {
 		return OrderID;
