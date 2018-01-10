@@ -1,0 +1,74 @@
+p{  font-family: 敺株�迤暺��;
+}
+body{
+  margin: 0 auto;
+}
+.thumbnails > li {
+    margin-left: 0px;
+}
+.col-md-3{
+  padding: 0 5px 0 5px
+}
+.thumbnail{
+  background: white;
+  box-shadow: 0.4rem 0.4rem 0.3rem 0 rgba(0,0,0,0.1);
+  margin: 5px 0px;
+  overflow: hidden;
+  border-radius: 5px;
+
+}
+.thumbnail:hover{
+  background: white;
+  cursor: pointer;
+  box-shadow:4px 4px 3px  rgba(20%,20%,40%,0.5);
+  background-color: rgba(40%,20%,40%,0.2);
+}
+.thumbnail img{
+  width: 80%;
+  margin: 0 auto;
+}
+.sortCol{
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+  border-radius: 2px;
+  display: flex;
+  margin-bottom: 1px;
+  background-color: #fff;
+  text-align: center;
+}
+.sortOption{
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  font-size: 120%;
+  line-height: 50px;
+}
+.sortOption:hover{
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+  background: #e0d2528c;
+}
+.sortOption>a:visited{
+  color: black;
+}
+.sortOptionSelect{
+  color: #ff5722;
+  border-bottom: 2px solid #ff5722;
+  box-sizing: border-box;
+}
+.sortOptionSelect>a:visited{
+  color: #ff5722;
+}
+#sidebar{
+  margin: 0;
+  padding: 0;
+}
+.bigClassification {
+    font-size: 140%;
+    font-weight: bold;
+}
+.chosenClass{
+  color: #f89406;
+}
+
+.sortOption a {
+	text-decoration: none;
+}

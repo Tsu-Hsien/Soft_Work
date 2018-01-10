@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3個meta標籤*必須*放在最前面，任何其他內容都*必須*跟隨其後！ -->
+    <title>World gym</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <!--mobile-->
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/mobile.css">  
+	
+	<!-- Font -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+ 
+</head>
+<body class="login">
+<!--
+   
+<header>
+ <div class="top_nav">
+  <div class="nav_menu">
+	<nav>
+	  <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+	</nav>
+  </div>
+ </div>	
+</header>
+-->
+
+<main>
+<div class="container-fluid">
+  <div class="row">
+	<a class="hiddenanchor" id="signup"></a>
+    <a class="hiddenanchor" id="signin"></a>
+	<div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+            <form id="loginField" class="form_left">
+              <h2><img src="img/logo_login.png" alt=""></h2>
+              <div>
+                <input type="text" class="form-control" placeholder="Username" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="Password" required="" />
+              </div>
+              <div class="verification">
+                <input type="text" class="form-control" placeholder="驗證碼" required="">
+                <a class="btn btn-default submit" href="#">更新驗證碼</a>
+                <div>
+                	<img src="img/verification.jpg" alt="">
+                	<span>英文區分大小寫</span>
+                </div>
+              </div>
+              <div>
+                <a class="btn btn-default submit login_btn" href="index.html">登入</a>
+                <a class="btn btn-default submit" href="javascript:document.getElementById('loginField').reset();">重設</a>
+                <a class="reset_pass" href="login-forget-password.html">忘記密碼?</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <div class="clearfix"></div>
+                <br />
+
+                <h5>
+                  <p>©2017 All Rights Reserved.</p>
+                </h5>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+      
+      
+  </div>
+</div>
+</main>
+   
+
+    
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="plugins/custom/custom.min.js"></script>
+</body>
+</html>

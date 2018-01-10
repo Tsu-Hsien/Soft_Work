@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><!-- InstanceBegin template="/Templates/templates.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3個meta標籤*必須*放在最前面，任何其他內容都*必須*跟隨其後！ -->
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>World gym</title>
+    <!-- InstanceEndEditable -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <!--mobile-->
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/mobile.css">  
+	
+	<!-- Font -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- 上傳檔案 -->
+    <link href="css/dropzone.css" rel="stylesheet" type="text/css">
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+    
+<header>
+ <div class="top_nav">
+  <div class="nav_menu">
+	<nav>
+	  <div class="nav toggle">
+		<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+	  </div>
+	  <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+	  <div class="stronghold">內湖分館</div>
+	  <!--------會員-------->
+	  <ul class="nav navbar-nav navbar-right">
+		<li>
+		  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+			<span class="top_name">HI,Rex</span>
+			<span class=" fa fa-angle-down"></span>
+		  </a>
+		  <ul class="dropdown-menu dropdown-usermenu pull-right">
+			<li>
+			  <a href="javascript:;">
+				<span class="badge bg-red pull-right">15:01</span>
+				<span>登入時間</span>
+			  </a>
+			</li>
+			<li><a href="javascript:;">修改密碼</a></li>
+			<li><a href="login.html"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
+		  </ul>
+		</li>
+	  </ul>
+	  <!--------end 會員-------->
+	</nav>
+  </div>
+ </div>	
+</header>
+  
+<main>
+<div class="container-fluid">
+  <div class="row">
+	<!--------左選單-------->
+	<div class="col-md-2 left_col">
+	  <div class="scroll-view">
+		<!-- sidebar menu -->
+		<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+		  <div class="menu_section nav-md">
+			<ul class="nav side-menu">
+			  <li><a href="index.html"><i class="fa fa-home"></i> Home </a>
+			  </li>
+			  <li><a><i class="fa fa-edit"></i> 題材樣式 <span class="fa fa-chevron-down"></span></a>
+				<ul class="nav child_menu">
+				  <li><a href="frame.html">外框模組 Frame</a></li>
+				  <li><a href="font.html">文字 Font</a></li>
+				  <li><a href="button.html">按鈕 Button</a></li>
+				  <li><a href="tab.html">頁籤 Tab</a></li>
+				  <li><a href="page.html">頁碼 Page</a></li>
+				  <li><a href="notice.html">提示 Notice</a></li>
+				  <li><a href="togglebox.html">手風琴樣式 Togglebox</a></li>
+				  <li><a href="box.html">提示視窗 Box</a></li>
+				  <li><a href="form.html">表單 Form</a></li>
+				  <li><a href="date.html">日期 Date</a></li>
+				  <li><a href="table.html">表格 Table</a></li>
+				  <li><a href="upload_file.html">上傳檔案 Upload</a></li>
+				</ul>
+			  </li>
+			  <li><a><i class="fa fa-signal"></i> 進階題材 <span class="fa fa-chevron-down"></span></a>
+				<ul class="nav child_menu">
+			 	  <li><a>圖表 chart<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">長條</a></li>
+						<li class="sub_menu"><a href="#">圓餅</a></li>
+						<li class="sub_menu"><a href="#">區塊</a></li>
+						<li class="sub_menu"><a href="#">線型圖</a></li>
+					  </ul>
+				  </li>
+				  <li><a href="sortable.html">可拖拉視窗模組 Sortable</a></li>
+				  <li><a href="step.html">流程樣式 Step</a></li>
+				  <li><a href="topnav.html">上選單 TopNav</a></li>
+				  <li><a href="tree.html">樹狀圖 Tree</a></li>
+				  <li><a href="tooltips.html">按鈕提示字 Tooltips</a></li>
+				</ul>
+			  </li>
+			  <li><a><i class="fa fa-sitemap"></i> 基本操作 <span class="fa fa-chevron-down"></span></a>
+				<ul class="nav child_menu">
+					<li><a href="audi.html">單檔AUDI</a></li>
+					<li><a href="multiple.html">多筆查詢</a></li>
+					<li><a>匯出入<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="upload.html">匯入</a></li>
+						<li class="sub_menu"><a href="export.html">匯出</a></li>
+					  </ul>
+					</li>
+					<li><a href="jreport.html">報表 JREPORT</a></li>
+				</ul>
+			  </li>  
+			  <li><a><i class="fa fa-windows"></i> 安控權限模組 <span class="fa fa-chevron-down"></span></a>
+				<ul class="nav child_menu">
+					<li><a href="system.html">模組功能</a></li>
+					<li><a href="user.html">角色群組</a></li>
+					<li><a href="account.html">帳號</a></li>
+					<li><a href="password.html">修改密碼</a></li>
+					<li><a href="codefile.html">代碼檔維護</a></li>
+					<li><a href="log.html">操作紀錄查詢</a></li>
+				</ul>
+			  </li>  
+			</ul>
+		  </div>
+              
+		</div>
+		<!-- /sidebar menu -->
+
+	  </div>
+	</div>
+	<!--------end 左選單--------></div>
+</div>
+</main>
+   
+
+    
+
+<!-- InstanceBeginEditable name="main_content" -->
+<!--------內容區塊-------->
+<div class="main_content">
+  <!--------匯出-------->
+  <div class="row">
+  	<div class="col-md-12">
+  	  <div class="panel panel-default">
+		 <div class="panel-heading">
+			<h3 class="panel-title">每日銷售明細表</h3>
+		 </div>
+		 <div class="panel-body">
+			<form class="form-horizontal" role="form">
+			  <div class="form-body">
+				<div class="form-group row col-md-6">
+				  <label class="col-md-3 control-label">會所區域<span class="red">*</span></label>
+				  <div class="col-md-9">
+					<select class="form-control">
+						<option>請選擇</option>
+				  	</select>
+				  </div>
+				</div>
+				<div class="form-group row col-md-6">
+				  <label class="col-md-3 control-label">會所<span class="red">*</span></label>
+				  <div class="col-md-9">
+					<select class="form-control">
+						<option>請選擇</option>
+				  	</select>
+				  </div>
+				</div>
+				<div class="form-group col-md-6">
+				  <label class="control-label col-md-3">銷售日期<span class="red">*</span></label>
+				  <div class="col-md-9">
+					<div class="input-group date date-picker" data-date-format="yyyy/mm/dd">
+						  <input type="text" class="form-control" value="2017/10/12" >
+						  <span class="input-group-btn">
+						  <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+						  </span>
+					  </div>
+					</div>
+				</div>
+				<div class="form-group row col-md-6">
+				  <label class="col-md-3 control-label">商品類別</label>
+				  <div class="col-md-9">
+					<select class="form-control">
+						<option>請選擇</option>
+				  	</select>
+				  </div>
+				</div>
+				
+				<div class="form-group col-md-12 text-center">
+				  <button data-dismiss="modal" class="btn btn-primary">預覽</button>
+				  <button data-dismiss="modal" class="btn btn-deafult" aria-hidden="true"　type="reset">清除</button>
+				</div>
+			  </div>
+			</form>
+			
+		</div>
+	  </div>
+  	</div>
+
+  </div>
+  <!--------end 匯出-------->
+</div>
+<!--------end 內容區塊-------->
+<!-- InstanceEndEditable -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="plugins/custom/custom.min.js"></script>
+
+<!-- 　Hover dropdown -->
+<script src="plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="plugins/main.js"></script>
+
+<!-- 動態表格 -->
+<script type="text/javascript" src="plugins/data-tables-bs3/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="plugins/data-tables-bs3/DT_bootstrap.js"></script>
+<script type="text/javascript" src="plugins/table-advanced.js"></script>
+<script>
+jQuery(document).ready(function() {    
+   TableAdvanced.init();
+});
+</script>
+
+<!-- date -->
+<script type="text/javascript" src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="plugins/app.js"></script>
+<script type="text/javascript" src="plugins/form-components.js"></script>
+
+<script>
+jQuery(document).ready(function() {    
+    FormComponents.init();
+});
+</script>
+
+<!-- 上傳檔案 -->
+<script src="plugins/dropzone.min.js"></script>
+<script src="plugins/dropzone.js"></script>
+
+
+</body>
+<!-- InstanceEnd --></html>

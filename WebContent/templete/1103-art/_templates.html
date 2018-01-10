@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3個meta標籤*必須*放在最前面，任何其他內容都*必須*跟隨其後！ -->
+    <title>World gym</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <!--mobile-->
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/mobile.css">  
+	
+	<!-- Font -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+ 
+</head>
+<body>
+    
+<header>
+ <div class="top_nav">
+  <div class="nav_menu">
+	<nav>
+	  <div class="nav toggle">
+		<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+	  </div>
+	  <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+	  <div class="stronghold">內湖分館</div>
+	  <!--------會員-------->
+	  <ul class="nav navbar-nav navbar-right">
+		<li>
+		  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+			<span class="top_name">HI,Rex</span>
+			<span class=" fa fa-angle-down"></span>
+		  </a>
+		  <ul class="dropdown-menu dropdown-usermenu pull-right">
+			<li>
+			  <a href="javascript:;">
+				<span class="badge bg-red pull-right">15:01</span>
+				<span>登入時間</span>
+			  </a>
+			</li>
+			<li><a href="javascript:;">修改密碼</a></li>
+			<li><a href="#"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
+		  </ul>
+		</li>
+	  </ul>
+	  <!--------end 會員-------->
+	</nav>
+  </div>
+ </div>	
+</header>
+  
+<main>
+<div class="container-fluid">
+  <div class="row">
+	<!--------左選單-------->
+	<div class="col-md-2 left_col">
+	  <div class="scroll-view">
+		<!-- sidebar menu -->
+		<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+		  <div class="menu_section nav-md">
+			<ul class="nav side-menu">
+			  <li><a><i class="fa fa-home"></i> Home </a>
+			  </li>
+			  <li><a><i class="fa fa-edit"></i> 題材樣式 <span class="fa fa-chevron-down"></span></a>
+				<ul class="nav child_menu">
+				  <li><a href="#">外框模組 Frame</a></li>
+				  <li><a href="#">字體 Font</a></li>
+				  <li><a href="#">按鈕 Button</a></li>
+				  <li><a href="#">頁籤 Tab</a></li>
+				  <li><a href="#">頁碼 Page</a></li>
+				  <li><a href="#">訊息筆數提示 Message</a></li>
+				  <li><a href="#">手風琴樣式</a></li>
+				  <li><a href="#">提示視窗 Box</a></li>
+				  <li><a href="#">表單 Form</a></li>
+				  <li><a href="#">表格 Table</a></li>
+				</ul>
+			  </li>
+			  <li><a><i class="fa fa-signal"></i> 進階題材 <span class="fa fa-chevron-down"></span></a>
+				<ul class="nav child_menu">
+			 	  <li><a>圖表 chart<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">長條</a></li>
+						<li class="sub_menu"><a href="#">圓餅</a></li>
+						<li class="sub_menu"><a href="#">區塊</a></li>
+						<li class="sub_menu"><a href="#">線型圖</a></li>
+					  </ul>
+				  </li>
+				  <li><a href="#">可拖拉視窗模組 Sortable</a></li>
+				  <li><a href="#">流程樣式 Step</a></li>
+				  <li><a href="#">上選單 TopNav</a></li>
+				  <li><a href="#">樹狀圖 Tree</a></li>
+				  <li><a href="#">按鈕提示字 Tooltips</a></li>
+				</ul>
+			  </li>
+			  <li><a><i class="fa fa-sitemap"></i> 基本操作 <span class="fa fa-chevron-down"></span><span class="label label-success">2</span></a>
+				<ul class="nav child_menu">
+					<li><a>單檔AUDI<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">相關功能展示</a></li>
+					  </ul>
+					</li>
+					<li><a>多筆查詢<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">相關功能展示</a></li>
+					  </ul>
+					</li>
+					<li><a>匯出入<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">上傳檔案</a></li>
+						<li class="sub_menu"><a href="#">匯出</a></li>
+					  </ul>
+					</li>
+					<li><a>報表<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">JREPORT</a></li>
+					  </ul>
+					</li>
+				</ul>
+			  </li>  
+			  <li><a><i class="fa fa-windows"></i> 安控權限模組 <span class="fa fa-chevron-down"></span></a>
+				<ul class="nav child_menu">
+					<li><a>代碼檔維護<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">相關功能展示</a></li>
+					  </ul>
+					</li>
+					<li><a>系統模組<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">相關功能展示</a></li>
+					  </ul>
+					</li>
+					<li><a>帳號<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">相關功能展示</a></li>
+					  </ul>
+					</li>
+					<li><a>角色<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">相關功能展示</a></li>
+					  </ul>
+					</li>
+					<li><a>群組建立<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">相關功能展示</a></li>
+					  </ul>
+					</li>
+					<li><a>修改密碼<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">相關功能展示</a></li>
+					  </ul>
+					</li>
+					<li><a>LOG查詢<span class="fa fa-chevron-down"></span></a>
+					  <ul class="nav child_menu">
+						<li class="sub_menu"><a href="#">相關功能展示</a></li>
+					  </ul>
+					</li>
+				</ul>
+			  </li>  
+			</ul>
+		  </div>
+              
+		</div>
+		<!-- /sidebar menu -->
+
+	  </div>
+	</div>
+	<!--------end 左選單-------->
+	
+	<!--------內容區塊-------->
+	<div class="main_content">
+   	   <h3 class="page-title"> 訊息公告 </h3>
+	    <!--------訊息公告-------->
+		<div class="x_panel">
+			<div class="x_title">
+			  <h2>訊息公告</h2>
+			  <ul class="nav navbar-right panel_toolbox">
+				<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+				</li>
+			  </ul>
+			  <div class="clearfix"></div>
+			</div>
+			<div class="x_content">
+			  <div class="dashboard-widget-content">
+
+				<ul class="list-unstyled timeline widget">
+				  <li>
+					<div class="block">
+					  <div class="block_content">
+						<h2 class="title">
+						   <a>關於產品共享中心</a>
+						</h2>
+						<div class="byline">
+						  <span>04 Aug, 2017</span> by <a>Rex</a>
+						</div>
+						<p class="excerpt">資訊科技不斷進步，數位化服務變得不可或缺，同時也奠定個人與企業的競爭力基礎。社群媒體、行動裝置、雲端服務等應用持續創新，科技衍生的串連力遠遠超越預期，並主導起整個社會的發展脈絡。在此同時，全球經濟持續震盪，又逢國內產業轉型陣痛與競爭者進逼的隱憂，企業開始思索下一波商機爭奪戰的致勝策略，並相信「科技創新」將是引領數位經濟浪潮的核心優勢！
+						</p>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="block">
+					  <div class="block_content">
+						<h2 class="title">
+						   <a>儲存整合管理解決方案</a>
+						</h2>
+						<div class="byline">
+						  <span>01 Aug, 2017</span> by <a>Rex</a>
+						</div>
+						<p class="excerpt">新一代的資料儲存整合管理方案，為企業建置資料儲存區域網路(Storage Area Network, SAN)及 網路儲存裝置(Network Attached Storage, NAS)，提供兼具虛擬化、擴展性、高效率、高可用、開放的連接、節約成本、可管理性的服務。
+						</p>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="block">
+					  <div class="block_content">
+						<h2 class="title">
+						   <a>IT系統管理解決方案</a>
+						</h2>
+						<div class="byline">
+						  <span>01 Aug, 2017</span> by <a>Rex</a>
+						</div>
+						<p class="excerpt">	1.	IT基礎架構硬體，如伺服器、網路、儲存等系統的維護與維修等服務。<br />
+ 						2.	企業營運與管理相關軟體的維護服務。<br />
+ 						3.	需要能夠提供維護服務等級合約 (Service Level Agreement)，使得營運的資訊系統能維持在期望水準值並獲得保障。
+						</p>
+					  </div>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		<!--------end 訊息公告-------->
+	</div>
+	<!--------end 內容區塊-------->
+  </div>
+</div>
+</main>
+   
+
+    
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="plugins/custom/custom.min.js"></script>
+</body>
+</html>
